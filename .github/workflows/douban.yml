@@ -2,7 +2,7 @@
 name: douban
 on: 
   schedule:
-  - cron: "30 * * * *"
+  - cron: "10 * * * *"
 
 jobs:
   douban:
@@ -15,7 +15,7 @@ jobs:
     - name: movie
       uses: lizheming/doumark-action@master
       with:
-        id: lizheming
+        id: 175157765
         type: movie
         format: csv
         dir: ./data/douban
@@ -23,7 +23,7 @@ jobs:
     - name: music
       uses: lizheming/doumark-action@master
       with:
-        id: lizheming
+        id: 175157765
         type: music
         format: csv
         dir: ./data/douban
