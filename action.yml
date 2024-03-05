@@ -4,15 +4,15 @@ description: "Douban movie/book/music marked data sync to csv or notion action"
 
 inputs:
   id:
-    description: "Your douban user_id"
+    description: "175157765"
     required: true
   type:
     description: "Douban data Type, enum value: `movie`, `book`, `music`, default `movie`"
-    default: movie
+    default: [movie, book, music]
     required: false
   status:
     description: "Douban data status, enum value: `mark`, `doing`, `done`, default `done`"
-    default: done
+    default: [done, mark, doing]
     required: false
   format:
     description: "Douban data store format, enum value：`csv`, `json`, `notion`, default `csv`"
